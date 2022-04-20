@@ -1,0 +1,10 @@
+server:
+   port: 3000
+   servlet:
+      contextPath:
+   compression:
+      enabled: true
+      mine-types: text/html,text/xml,text/plain,text/css,text/javascript,application/javascript,application/json
+      min-response-size: 1024
+   http2:
+      enabled: true

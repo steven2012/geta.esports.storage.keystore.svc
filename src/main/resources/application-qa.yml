@@ -1,0 +1,18 @@
+
+logging:
+   level:
+      org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
+      
+spring:
+  jpa:
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate.jdbc.lob.non_contextual_creation: true 
+  data:
+    azuredb:
+      conecttion: #{{genesys-storage-keystore-svc-connection-strings-table-storage}}
+
+name.table.storage.encrypted: "Storage"
+seed-encryptor: "GENESYS-SPORT-KEY_STORAGE"
